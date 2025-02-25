@@ -6,8 +6,7 @@ function Travelling() {
   const navigate = useNavigate();
 
   return (
-    <div className={styles.container}>
-      {/* Back button container at the top */}
+    <div className={styles.travellingContainer}>
       <div className={styles.backButtonContainer}>
         <button 
           onClick={() => navigate('/')}
@@ -18,8 +17,8 @@ function Travelling() {
       </div>
 
       <section id="hobbies" className={styles.hobbiesSection}>
-        <h1 className={styles.sectionTitle}>My Travel Experiences</h1>
-        {/* Rest of your travel content */}
+        <h1 className={styles.sectionTitle}>MY TRAVEL EXPERIENCES</h1>
+        {/* Add your travel content here */}
       </section>
     </div>
   );

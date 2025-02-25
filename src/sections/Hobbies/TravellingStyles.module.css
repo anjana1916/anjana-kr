@@ -1,6 +1,37 @@
-.travellingSection {
-  padding: 2rem;
-  background-color: #f9f9f9;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.travellingContainer {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/back3.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Renamed to match the id used in your JSX */
+.hobbiesSection {
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 90%;
+  width: 90%;
 }
 
 .sectionTitle {
@@ -46,21 +77,26 @@
   font-size: 1rem;
   color: #666;
 }
-/* Add to HobbiesStyles.module.css */
+
+.backButtonContainer {
+  text-align: left;
+  margin: 1rem 0 1rem 1rem;
+  align-self: flex-start;
+  width: 100%;
+  padding-left: 1rem;
+}
+
 .backButton {
-  background-color: var(--btn-color);
-  color: var(--btn-text-color);
+  background-color: #007bff;
+  color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
   cursor: pointer;
-  margin: 20px;
-  font-family: 'Roboto Mono', monospace;
-  transition: transform 0.2s ease;
 }
 
 .backButton:hover {
-  transform: scale(1.05);
+  background-color: #0056b3;
 }
 
 .year {
