@@ -1,7 +1,7 @@
 import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/book.png';
 import freshBurger from '../../assets/better-health.png';
-import hipsster from '../../assets/hipsster.png';
+import hipsster from '../../assets/cursor.png';
 import fitLift from '../../assets/fitlift.png';
 import ProjectCard from '../../common/ProjectCard';
 
@@ -24,9 +24,9 @@ function Projects() {
         />
         <ProjectCard
           src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Project 3"
-          p="Project 3"
+          link="https://mdquiz.vipresearch.ca/"
+          h3="Quiz Difficulty Analysis"
+          p="Mouse Dynamics Project"
         />
         <ProjectCard
           src={fitLift}
