@@ -49,24 +49,30 @@
 
 .backButtonContainer {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
   z-index: 10;
 }
 
 .backButton {
-  background-color: transparent;
-  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
   border: none;
-  padding: 15px;
-  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
   cursor: pointer;
-  margin: 20px;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .backButton:hover {
-  transform: translateX(-5px);
+  background-color: white;
+  transform: translateX(-3px);
 }
 
 /* Introduction Section */
@@ -356,31 +362,3 @@
   padding: 0 10px;
 }
 
-/* Dark mode compatibility */
-:global(.dark-mode) .styleCard,
-:global(.dark-mode) .videoItem {
-  background-color: #2a2a2a;
-}
-
-:global(.dark-mode) .styleCard h3,
-:global(.dark-mode) .videoItem h3 {
-  color: #f0f0f0;
-}
-
-:global(.dark-mode) .styleCard p,
-:global(.dark-mode) .videoItem p {
-  color: #d0d0d0;
-}
-
-:global(.dark-mode) .timeline:before {
-  background-color: var(--accent-color, #ff4081);
-}
-
-:global(.dark-mode) .timelineMarker {
-  border-color: var(--bg-color, #121212);
-}
-
-:global(.dark-mode) .container {
-  background-color: rgba(30, 30, 30, 0.9);
-  color: #f0f0f0;
-}

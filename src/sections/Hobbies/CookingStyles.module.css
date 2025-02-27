@@ -1,33 +1,318 @@
+.cookingPage {
+  min-height: 100vh;
+  background-color: #f8f5f2;
+  color: #333;
+}
+
+.pageHeader {
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/cooking-header.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.headerContent {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.headerContent h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.headerContent p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: -40px;
+  position: relative;
 }
 
 .backButtonContainer {
-  text-align: left;
-  margin-bottom: 1rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
 }
 
 .backButton {
-  background-color: #007bff;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .backButton:hover {
-  background-color: #0056b3;
+  background-color: white;
+  transform: translateX(-3px);
 }
 
-.hobbiesSection {
-  padding: 2rem;
-  background-color: #f9f9f9;
+/* Introduction Section */
+.introSection {
+  margin-bottom: 3rem;
 }
 
-.sectionTitle {
-  font-size: 2.5rem;
-  text-align: center;
+.introSection h2,
+.filterSection h2,
+.dishesSection h2,
+.tipsSection h2,
+.essentialsSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.introSection h2:after,
+.filterSection h2:after,
+.dishesSection h2:after,
+.tipsSection h2:after,
+.essentialsSection h2:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40%;
+  height: 3px;
+  background-color: #f2a03d;
+  border-radius: 2px;
+}
+
+.introSection p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Filter Section */
+.filterSection {
   margin-bottom: 2rem;
+}
+
+.filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.filterButton {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.filterButton:hover {
+  background-color: #e0e0e0;
+}
+
+.filterButton.active {
+  background-color: #f2a03d;
+  color: white;
+}
+
+/* Dishes Gallery */
+.dishesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.dishCard {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dishCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dishImageContainer {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.dishImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.dishCard:hover .dishImage {
+  transform: scale(1.05);
+}
+
+.dishDifficulty {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.dishInfo {
+  padding: 1.5rem;
+}
+
+.dishInfo h3 {
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.dishDate {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.dishDescription {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Cooking Tips Section */
+.tipsSection {
+  margin-bottom: 3rem;
+}
+
+.tipsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.tipCard {
+  background-color: #f9f9f9;
+  border-left: 4px solid #f2a03d;
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.tipCard h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.tipCard p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Kitchen Essentials Section */
+.essentialsSection {
+  margin-bottom: 2rem;
+}
+
+.essentialsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.essentialItem {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.essentialItem:hover {
+  transform: translateY(-5px);
+}
+
+.essentialIcon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.essentialItem h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.essentialItem p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pageHeader {
+    height: 30vh;
+  }
+  
+  .headerContent h1 {
+    font-size: 2.2rem;
+  }
+  
+  .headerContent p {
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 1.5rem;
+    margin-top: -30px;
+  }
+  
+  .dishesGrid,
+  .tipsList,
+  .essentialsList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerContent h1 {
+    font-size: 1.8rem;
+  }
+  
+  .introSection h2,
+  .filterSection h2,
+  .dishesSection h2,
+  .tipsSection h2,
+  .essentialsSection h2 {
+    font-size: 1.5rem;
+  }
 }
