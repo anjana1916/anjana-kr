@@ -80,6 +80,10 @@ function Skills() {
         </div>
         <div className={styles.skillItem}>
           <img src={checkMarkIcon} alt="checkmark" className={styles.checkmark} />
+          <span>Power BI & Tableau</span>
+        </div>
+        <div className={styles.skillItem}>
+          <img src={checkMarkIcon} alt="checkmark" className={styles.checkmark} />
           <span>Statistical Analysis</span>
         </div>
       </div>

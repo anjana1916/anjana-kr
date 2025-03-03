@@ -30,9 +30,9 @@ function Projects() {
         />
         <ProjectCard
           src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Project 4"
-          p="Project 4"
+          link="https://github.com/anjana1916/Taxi-trip-statistics/tree/main"
+          h3="Taxi Trip Statistics"
+          p="Big Data Project"
         />
       </div>
     </section>
