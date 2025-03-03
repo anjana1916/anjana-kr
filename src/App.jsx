@@ -10,6 +10,7 @@ import Hobbies from './sections/Hobbies/Hobbies';
 import Travelling from './sections/Hobbies/Travelling';
 import Dancing from './sections/Hobbies/Dancing';
 import Cooking from './sections/Hobbies/Cooking';
+import Dashboards from './sections/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <>
             <Hero />
             <Projects />
+            <Dashboards />
             <Skills />
             <Hobbies />
             <Contact />
