@@ -1,5 +1,5 @@
 .container {
-  padding: 4rem 1rem;
+  padding: 3rem 1rem; /* Add more padding for the container */
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -9,7 +9,7 @@
 
 .title {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* Increase spacing below the title */
   color: var(--text-color);
 }
 
@@ -21,30 +21,35 @@
 }
 
 .dashboardsGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem; /* Increase gap between cards */
+  justify-content: center;
   width: 100%;
   max-width: 1200px;
 }
 
 .dashboardCard {
-  background-color: var(--card-bg-color, #f5f5f5);
-  border-radius: 12px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px; /* Increase card width slightly */
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem; /* Add padding inside the card */
 }
 
 .dashboardCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .thumbnailContainer {
   width: 100%;
   height: 200px;
   overflow: hidden;
+  margin-bottom: 1rem; /* Add spacing below the thumbnail */
 }
 
 .thumbnail {
@@ -66,25 +71,41 @@
 }
 
 .dashboardInfo {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: left;
 }
 
 .dashboardInfo h3 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
   color: var(--text-color);
 }
 
 .dashboardInfo p {
-  color: var(--secondary-text-color);
-  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem; /* Add more spacing below the description */
   line-height: 1.5;
-  font-size: 0.95rem;
 }
 
+.viewLink,
 .downloadLink {
   text-decoration: none;
+}
+
+button.hover {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Increase button padding */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.hover:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Add a slight scale effect on hover */
 }
 
 .downloadLink button {
