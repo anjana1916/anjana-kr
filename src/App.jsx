@@ -11,6 +11,7 @@ import Travelling from './sections/Hobbies/Travelling';
 import Dancing from './sections/Hobbies/Dancing';
 import Cooking from './sections/Hobbies/Cooking';
 import Dashboards from './sections/Dashboard/Dashboard';
+import BigDataProjects from './sections/BigDataProjects/BigDataProjects'; 
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Hero />
             <Projects />
             <Dashboards />
+            <BigDataProjects />
             <Skills />
             <Hobbies />
             <Contact />
