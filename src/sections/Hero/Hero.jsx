@@ -42,13 +42,13 @@ function Hero() {
         </h1>
         <h2>Data Scientist</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://x.com/anjanakr1916" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/anjana1916" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/anjana-karathat-rajeev/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
