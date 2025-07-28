@@ -22,7 +22,7 @@ function Dashboards() {
       link: "https://public.tableau.com/app/profile/anjana.karathat.rajeev/viz/DroughtandWildfiresCanCaliforniaKeepGrowingtheWorldsAlmonds/Dashboard1" // Replace with your Tableau Public URL
     },
     {
-      title: "Predictive Homelessness Forecasting Dashboard",
+      title: "Homelessness Forecasting Dashboard",
       description: "Analyzing Australia's homelessness service coverage gaps and regional growth trends to identify priority intervention areas.",
       pdfFile: homelessnessPdf,
       thumbnail: forecastIcon,
